@@ -8,6 +8,9 @@ const networkConfig = {
     4: {
         name: "rinkeby",
     },
+    5: {
+        name: "goerli",
+    },
     // also need mumbai network 
 }
 

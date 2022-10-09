@@ -17,6 +17,7 @@ const { developmentChains, networkConfig, waitBlockConfirmations} = require("../
         describe("mint function", function () {
             it("mint corectly", async () => {})              
             it("can't mint if have not enough matic", async () => {})
+            it("can't mint if max supply", async () => {})
         })
 
         describe("Withdraw function", function () {

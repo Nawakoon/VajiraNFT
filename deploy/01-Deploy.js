@@ -19,9 +19,10 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     // hard code arg first
     const name = "Vajira110"
     const symbol = "VJR110"
-    const URI = "ipfs..."
+    const URI = "ipfs://Qmc2Cq59FDMvCj54jVwx2zeNRftSdNRKtCm4pUaJDVh3Ns/"
+    const maxSupply = "1000"
 
-    const arg = [name, symbol, URI]
+    const arg = [name, symbol, URI, maxSupply]
     const ricchezzaSword001 = await deploy("Vajira110", {
         from: deployer,
         args: arg,
