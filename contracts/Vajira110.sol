@@ -23,7 +23,8 @@ contract Vajira110 is ERC721URIStorage, ReentrancyGuard, Ownable {
     string private constant i_URIPrefix = ".json";
     address private immutable i_owner;
     uint256 private immutable i_maxSupply;
-    uint256 private constant i_price = 75000000000000000; // 75 matic
+    // estimate price 75 matic
+    uint256 private constant i_price = 7500000000000000; // 0.075 eth
 
     /* Mapping */
     // tokenId => claimed

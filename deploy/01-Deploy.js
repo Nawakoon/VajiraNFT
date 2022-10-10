@@ -19,11 +19,11 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     // hard code arg first
     const name = "Vajira110"
     const symbol = "VJR110"
-    const URI = "ipfs://Qmc2Cq59FDMvCj54jVwx2zeNRftSdNRKtCm4pUaJDVh3Ns/"
+    const URI = "ipfs://QmZpobTNSL3JiZKenY2EygYG2bRY7BfvRX5mXL4WWhmeJN/"
     const maxSupply = "1000"
 
     const arg = [name, symbol, URI, maxSupply]
-    const ricchezzaSword001 = await deploy("Vajira110", {
+    const VajiraContract = await deploy("Vajira110", {
         from: deployer,
         args: arg,
         log: true,
@@ -33,7 +33,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     // Verify the deployment
     if (!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY) {
         log("Verifying...")
-        await verify(ricchezzaSword001.address, arg)
+        await verify(VajiraContract.address, arg)
     }
 
     log("mint the NFT with command:")
