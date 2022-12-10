@@ -23,8 +23,7 @@ contract Vajira110 is ERC721URIStorage, ReentrancyGuard, Ownable {
     string private constant i_URIPrefix = ".json";
     address private immutable i_owner;
     uint256 private immutable i_maxSupply;
-    // estimate price 75 matic
-    uint256 private constant i_price = 7500000000000000; // 0.075 eth
+    uint256 private constant i_price = 750000000000000; // 0.00075 eth
 
     /* Mapping */
     // tokenId => claimed
@@ -41,6 +40,7 @@ contract Vajira110 is ERC721URIStorage, ReentrancyGuard, Ownable {
         i_owner = msg.sender;
         i_baseTokenURI = _baseURI;
         i_maxSupply = _maxSupply;
+        _tokenIds.increment(); // start at id 1 instead of 0
     }
 
     function mint() public payable {

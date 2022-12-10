@@ -1,0 +1,23 @@
+{
+  "name": "Vajira110 #1",
+  "description": "Vajira NFT collection 110 anniversary",
+  "image": "ipfs://QmR4sVcyFQuJiuUwhxPv9YmD8gSR3DqsTzhf9nvAw65JN6/1.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "bend"
+    },
+    {
+      "trait_type": "Item1",
+      "value": "linux"
+    },
+    {
+      "trait_type": "Item2",
+      "value": "monalisa"
+    },
+    {
+      "trait_type": "weather",
+      "value": "fire"
+    }
+  ]
+}
